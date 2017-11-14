@@ -696,54 +696,103 @@ private: System::Void pictureBox10_Click(System::Object^  sender, System::EventA
 
 
 		 void star() {
-			 if (controlValue >= 1) {
+			 if (controlValue == 1) {
 				 pictureBox11->Image = Image::FromFile("StarYellow.png");
 				 pictureBox5->Image = Image::FromFile("Lvl1Star2.png");
 			 }
-			 if (controlValue >= 2) {
+			 if (controlValue == 2) {
 				 pictureBox12->Image = Image::FromFile("StarYellow.png");
 				 pictureBox5->Image = Image::FromFile("Lvl1Star3.png");
 			 }
-			 if (controlValue >= 3) {
+			 if (controlValue == 3) {
 				 pictureBox13->Image = Image::FromFile("StarYellow.png");
 				 pictureBox2->Image = Image::FromFile("Unlock.png");
 				 pictureBox2->Enabled = true;
+				
+				 label1->Text = L"Niveau 2";
+				 pictureBox5->Image = Image::FromFile("Lvl2Star1.png");
+
+				 pictureBox11->Visible = false;
+				 pictureBox12->Visible = false;
+				 pictureBox13->Visible = false;
+				 pictureBox10->Visible = true;
+				 pictureBox14->Visible = true;
+				 pictureBox15->Visible = true;
+				 pictureBox16->Visible = false;
+				 pictureBox17->Visible = false;
+				 pictureBox18->Visible = false;
+				 pictureBox19->Visible = false;
+				 pictureBox20->Visible = false;
+				 pictureBox1->Visible = false;
 			 }
-			 if (controlValue >= 4) {
+			 if (controlValue == 4) {
 				 pictureBox10->Image = Image::FromFile("StarYellow.png");
 				 pictureBox5->Image = Image::FromFile("Lvl2Star2.png");
 			 }
-			 if (controlValue >= 5) {
+			 if (controlValue == 5) {
 				 pictureBox14->Image = Image::FromFile("StarYellow.png");
 				 pictureBox5->Image = Image::FromFile("Lvl2Star3.png");
 			 }
-			 if (controlValue >= 6) {
+			 if (controlValue == 6) {
 				 pictureBox15->Image = Image::FromFile("StarYellow.png");
 				 pictureBox6->Image = Image::FromFile("Unlock.png");
 				 pictureBox6->Enabled = true;
+
+				 label1->Text = L"Niveau 3";
+				 pictureBox5->Image = Image::FromFile("Lvl3Star1.png");
+
+				 pictureBox11->Visible = false;
+				 pictureBox12->Visible = false;
+				 pictureBox13->Visible = false;
+				 pictureBox10->Visible = false;
+				 pictureBox14->Visible = false;
+				 pictureBox15->Visible = false;
+				 pictureBox16->Visible = true;
+				 pictureBox17->Visible = true;
+				 pictureBox18->Visible = true;
+				 pictureBox19->Visible = false;
+				 pictureBox20->Visible = false;
+				 pictureBox1->Visible = false;
+
 			 }
-			 if (controlValue >= 7) {
+			 if (controlValue == 7) {
 				 pictureBox16->Image = Image::FromFile("StarYellow.png");
 				 pictureBox5->Image = Image::FromFile("Lvl3Star2.png");
 			 }
-			 if (controlValue >= 8) {
+			 if (controlValue == 8) {
 				 pictureBox17->Image = Image::FromFile("StarYellow.png");
 				 pictureBox5->Image = Image::FromFile("Lvl3Star3.png");
 			 }
-			 if (controlValue >= 9) {
+			 if (controlValue == 9) {
 				 pictureBox18->Image = Image::FromFile("StarYellow.png");
 				 pictureBox7->Image = Image::FromFile("Unlock.png");
 				 pictureBox7->Enabled = true;
+
+				 label1->Text = L"Niveau 4";
+				 pictureBox5->Image = Image::FromFile("Lvl4Star1.png");
+				
+					 pictureBox11->Visible = false;
+					 pictureBox12->Visible = false;
+					 pictureBox13->Visible = false;
+					 pictureBox10->Visible = false;
+					 pictureBox14->Visible = false;
+					 pictureBox15->Visible = false;
+					 pictureBox16->Visible = false;
+					 pictureBox17->Visible = false;
+					 pictureBox18->Visible = false;
+					 pictureBox19->Visible = true;
+					 pictureBox20->Visible = true;
+					 pictureBox1->Visible = true;
 			 }
-			 if (controlValue >= 10) {
+			 if (controlValue == 10) {
 				 pictureBox1->Image = Image::FromFile("StarYellow.png");	
 				 pictureBox5->Image = Image::FromFile("Lvl4Star2.png");
 			 }
-			 if (controlValue >= 11) {
+			 if (controlValue == 11) {
 				 pictureBox19->Image = Image::FromFile("StarYellow.png");
 				 pictureBox5->Image = Image::FromFile("Lvl4Star3.png");
 			 }
-			 if (controlValue >= 12) {
+			 if (controlValue == 12) {
 				 pictureBox20->Image = Image::FromFile("StarYellow.png");
 				
 
