@@ -95,7 +95,7 @@ namespace Project4 {
 			this->button2->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button2->Location = System::Drawing::Point(190, 205);
+			this->button2->Location = System::Drawing::Point(187, 200);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(236, 54);
 			this->button2->TabIndex = 2;
