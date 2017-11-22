@@ -1,6 +1,9 @@
 #pragma once
 #include <iostream>
 #include "MyForm1.h"
+#include <Windows.h>
+#include <MMSystem.h>
+
 
 
 
@@ -13,6 +16,8 @@ namespace Project4 {
 	using namespace System::Data;
 	using namespace System::Drawing;
 	using namespace std;
+
+	
 
 	/// <summary>
 	/// Summary for MyForm
@@ -373,6 +378,7 @@ namespace Project4 {
 			// pictureBox11
 			// 
 			this->pictureBox11->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox11->Enabled = false;
 			this->pictureBox11->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox11.Image")));
 			this->pictureBox11->Location = System::Drawing::Point(3, 3);
 			this->pictureBox11->Name = L"pictureBox11";
@@ -385,6 +391,7 @@ namespace Project4 {
 			// pictureBox12
 			// 
 			this->pictureBox12->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox12->Enabled = false;
 			this->pictureBox12->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox12.Image")));
 			this->pictureBox12->Location = System::Drawing::Point(86, 3);
 			this->pictureBox12->Name = L"pictureBox12";
@@ -397,6 +404,7 @@ namespace Project4 {
 			// pictureBox13
 			// 
 			this->pictureBox13->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox13->Enabled = false;
 			this->pictureBox13->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox13.Image")));
 			this->pictureBox13->Location = System::Drawing::Point(169, 3);
 			this->pictureBox13->Name = L"pictureBox13";
@@ -409,6 +417,7 @@ namespace Project4 {
 			// pictureBox1
 			// 
 			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox1->Enabled = false;
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
 			this->pictureBox1->Location = System::Drawing::Point(252, 3);
 			this->pictureBox1->Name = L"pictureBox1";
@@ -422,6 +431,7 @@ namespace Project4 {
 			// pictureBox10
 			// 
 			this->pictureBox10->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox10->Enabled = false;
 			this->pictureBox10->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox10.Image")));
 			this->pictureBox10->Location = System::Drawing::Point(335, 3);
 			this->pictureBox10->Name = L"pictureBox10";
@@ -430,10 +440,12 @@ namespace Project4 {
 			this->pictureBox10->TabIndex = 4;
 			this->pictureBox10->TabStop = false;
 			this->pictureBox10->Visible = false;
+			this->pictureBox10->Click += gcnew System::EventHandler(this, &MyForm::pictureBox10_Click_1);
 			// 
 			// pictureBox14
 			// 
 			this->pictureBox14->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox14->Enabled = false;
 			this->pictureBox14->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox14.Image")));
 			this->pictureBox14->Location = System::Drawing::Point(418, 3);
 			this->pictureBox14->Name = L"pictureBox14";
@@ -442,10 +454,12 @@ namespace Project4 {
 			this->pictureBox14->TabIndex = 5;
 			this->pictureBox14->TabStop = false;
 			this->pictureBox14->Visible = false;
+			this->pictureBox14->Click += gcnew System::EventHandler(this, &MyForm::pictureBox14_Click);
 			// 
 			// pictureBox15
 			// 
 			this->pictureBox15->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox15->Enabled = false;
 			this->pictureBox15->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox15.Image")));
 			this->pictureBox15->Location = System::Drawing::Point(501, 3);
 			this->pictureBox15->Name = L"pictureBox15";
@@ -459,6 +473,7 @@ namespace Project4 {
 			// pictureBox16
 			// 
 			this->pictureBox16->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox16->Enabled = false;
 			this->pictureBox16->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox16.Image")));
 			this->pictureBox16->Location = System::Drawing::Point(584, 3);
 			this->pictureBox16->Name = L"pictureBox16";
@@ -467,10 +482,12 @@ namespace Project4 {
 			this->pictureBox16->TabIndex = 7;
 			this->pictureBox16->TabStop = false;
 			this->pictureBox16->Visible = false;
+			this->pictureBox16->Click += gcnew System::EventHandler(this, &MyForm::pictureBox16_Click);
 			// 
 			// pictureBox17
 			// 
 			this->pictureBox17->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox17->Enabled = false;
 			this->pictureBox17->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox17.Image")));
 			this->pictureBox17->Location = System::Drawing::Point(667, 3);
 			this->pictureBox17->Name = L"pictureBox17";
@@ -479,10 +496,12 @@ namespace Project4 {
 			this->pictureBox17->TabIndex = 8;
 			this->pictureBox17->TabStop = false;
 			this->pictureBox17->Visible = false;
+			this->pictureBox17->Click += gcnew System::EventHandler(this, &MyForm::pictureBox17_Click);
 			// 
 			// pictureBox18
 			// 
 			this->pictureBox18->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox18->Enabled = false;
 			this->pictureBox18->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox18.Image")));
 			this->pictureBox18->Location = System::Drawing::Point(750, 3);
 			this->pictureBox18->Name = L"pictureBox18";
@@ -491,10 +510,12 @@ namespace Project4 {
 			this->pictureBox18->TabIndex = 9;
 			this->pictureBox18->TabStop = false;
 			this->pictureBox18->Visible = false;
+			this->pictureBox18->Click += gcnew System::EventHandler(this, &MyForm::pictureBox18_Click);
 			// 
 			// pictureBox19
 			// 
 			this->pictureBox19->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox19->Enabled = false;
 			this->pictureBox19->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox19.Image")));
 			this->pictureBox19->Location = System::Drawing::Point(3, 78);
 			this->pictureBox19->Name = L"pictureBox19";
@@ -503,10 +524,12 @@ namespace Project4 {
 			this->pictureBox19->TabIndex = 10;
 			this->pictureBox19->TabStop = false;
 			this->pictureBox19->Visible = false;
+			this->pictureBox19->Click += gcnew System::EventHandler(this, &MyForm::pictureBox19_Click);
 			// 
 			// pictureBox20
 			// 
 			this->pictureBox20->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox20->Enabled = false;
 			this->pictureBox20->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox20.Image")));
 			this->pictureBox20->Location = System::Drawing::Point(86, 78);
 			this->pictureBox20->Name = L"pictureBox20";
@@ -515,6 +538,7 @@ namespace Project4 {
 			this->pictureBox20->TabIndex = 11;
 			this->pictureBox20->TabStop = false;
 			this->pictureBox20->Visible = false;
+			this->pictureBox20->Click += gcnew System::EventHandler(this, &MyForm::pictureBox20_Click);
 			// 
 			// label1
 			// 
@@ -699,18 +723,26 @@ private: System::Void pictureBox10_Click(System::Object^  sender, System::EventA
 			 if (controlValue == 1) {
 				 pictureBox11->Image = Image::FromFile("StarYellow.png");
 				 pictureBox5->Image = Image::FromFile("Lvl1Star2.png");
+			
 			 }
 			 if (controlValue == 2) {
 				 pictureBox12->Image = Image::FromFile("StarYellow.png");
 				 pictureBox5->Image = Image::FromFile("Lvl1Star3.png");
+				 
 			 }
 			 if (controlValue == 3) {
 				 pictureBox13->Image = Image::FromFile("StarYellow.png");
 				 pictureBox2->Image = Image::FromFile("Unlock.png");
 				 pictureBox2->Enabled = true;
+				 pictureBox13->Enabled = true;
+
 				
+				 Sleep(1500);
+
 				 label1->Text = L"Niveau 2";
 				 pictureBox5->Image = Image::FromFile("Lvl2Star1.png");
+			
+				 
 
 				 pictureBox11->Visible = false;
 				 pictureBox12->Visible = false;
@@ -724,6 +756,7 @@ private: System::Void pictureBox10_Click(System::Object^  sender, System::EventA
 				 pictureBox19->Visible = false;
 				 pictureBox20->Visible = false;
 				 pictureBox1->Visible = false;
+				
 			 }
 			 if (controlValue == 4) {
 				 pictureBox10->Image = Image::FromFile("StarYellow.png");
@@ -737,9 +770,14 @@ private: System::Void pictureBox10_Click(System::Object^  sender, System::EventA
 				 pictureBox15->Image = Image::FromFile("StarYellow.png");
 				 pictureBox6->Image = Image::FromFile("Unlock.png");
 				 pictureBox6->Enabled = true;
+				 pictureBox15->Enabled = true;
+
+				 
+				 Sleep(1500);
 
 				 label1->Text = L"Niveau 3";
 				 pictureBox5->Image = Image::FromFile("Lvl3Star1.png");
+
 
 				 pictureBox11->Visible = false;
 				 pictureBox12->Visible = false;
@@ -767,6 +805,10 @@ private: System::Void pictureBox10_Click(System::Object^  sender, System::EventA
 				 pictureBox18->Image = Image::FromFile("StarYellow.png");
 				 pictureBox7->Image = Image::FromFile("Unlock.png");
 				 pictureBox7->Enabled = true;
+				 pictureBox18->Enabled = true;
+
+				
+				 Sleep(1500);
 
 				 label1->Text = L"Niveau 4";
 				 pictureBox5->Image = Image::FromFile("Lvl4Star1.png");
@@ -794,8 +836,10 @@ private: System::Void pictureBox10_Click(System::Object^  sender, System::EventA
 			 }
 			 if (controlValue == 12) {
 				 pictureBox20->Image = Image::FromFile("StarYellow.png");
-				
+				 pictureBox20->Enabled = true;
 
+				 
+				
 			 }
 		 }
 
@@ -920,6 +964,20 @@ private: System::Void pictureBox15_Click(System::Object^  sender, System::EventA
 private: System::Void pictureBox1_Click(System::Object^  sender, System::EventArgs^  e) {
 }
 private: System::Void pictureBox5_Click_1(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void pictureBox10_Click_1(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void pictureBox14_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void pictureBox16_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void pictureBox17_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void pictureBox18_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void pictureBox20_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void pictureBox19_Click(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }

@@ -1,5 +1,7 @@
 #pragma once
 #include "MyForm.h"
+#include <Windows.h>
+#include <MMSystem.h>
 
 namespace Project4 {
 
@@ -123,7 +125,8 @@ namespace Project4 {
 
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 		MyForm ^ form = gcnew MyForm;
-
+		
+		
 		form->ShowDialog();
 		
 	}
