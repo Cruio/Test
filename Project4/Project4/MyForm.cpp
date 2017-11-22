@@ -5,6 +5,7 @@
 #include "opencv2\highgui.hpp"
 #include "opencv2\imgcodecs.hpp"
 #include "opencv2\imgproc.hpp"
+#include "Sound.cpp"
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
@@ -22,6 +23,9 @@ int main() {
 	Application::SetCompatibleTextRenderingDefault(false);
 	Project4::MyForm1 form;
 	Application::Run(%form);
+	Sound sound;
+
+	sound.checkSound(1,2);
 	
 
 
